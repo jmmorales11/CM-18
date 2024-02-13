@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amor</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .envelope {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .content {
+        width: 100%;
+        height: 20%;
+        background-color: #0056b3;
+    }
+    .seal {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #e74c3c;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    .heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 24px;
+    }
+    .options {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn {
+        margin-top: 100px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .Segunda{
+        
+        height: 80%;
+        border:2px solid black ;
+        width: 100%;
+        text-align: center;
+    }
+    .triangle {
+        
+        width: 35%;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 100px solid #b61b1b; /* color del fondo */
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        
+        background-color:  #b61b1b;
+        margin-left: -1%;
+        margin-bottom: -33%;
+    }
+    .envelope:hover .triangle {
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        margin-bottom:-0% ;
+    }
+    .envelope:hover .btn{
+        margin-top: 100px;
+
+    }
+    .va{
+        display: none;
+        margin: auto;
+        
+    }
+    .envelope:hover .va{
+        display: block; 
+
+        padding-top: 10%;
+        color: #000;     
+    }
+</style>
+</head>
+<body>
+    
+<div class="envelope">
+    <div class="triangle"></div>
+    
+    <div class="Segunda">
+        <p class="va">💕💕💕💕💕💕<br/>¿Quieres ser mi Valentín? <br/>🌟🌟🌟🌟🌟🌟</p>
+    </div>
+</div>
+
+<div class="options">
+    <a href="si.html" class="btn">Sí</a>
+    <a href="si.html" class="btn" id="noBtn">No</a>
+</div>
+
+<script>
+    document.getElementById("noBtn").addEventListener("mouseover", function() {
+        this.innerHTML = "Sí";
+    });
+    document.getElementById("noBtn").addEventListener("mouseout", function() {
+        this.innerHTML = "No";
+    });
+</script>
+
+</body>
+</html>
